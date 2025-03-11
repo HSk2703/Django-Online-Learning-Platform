@@ -1,15 +1,97 @@
+# Django Online Learning Platform
 
-**General Notes**
+This project is a **comprehensive online learning platform** developed using Django, aiming to provide users with access to a variety of courses, interactive lessons, and a seamless learning experience.
 
-An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
+## Features
 
-- If you want to develop the final project on Theia hosted by [IBM Developer Skills Network](https://labs.cognitiveclass.ai/), you will need to create the same project structure on Theia workspace and save it everytime you close the browser
-- Or you could develop the final project locally by setting up your own Python runtime and IDE
-- Hints for the final project are left on source code files
-- You may choose any cloud platform for deployment (default is IBM Cloud Foundry)
-- Depends on your deployment, you may choose any SQL database Django supported such as SQLite3, PostgreSQL, and MySQL (default is SQLite3)
+- **Course Management** – Administrators can create, update, and delete courses.
+- **User Enrollment** – Users can enroll in courses and track their progress.
+- **Assessments** – Incorporates quizzes and assignments to evaluate user understanding.
+- **Discussion Forums** – Facilitates interaction between students and instructors.
 
-**ER Diagram**
-For your reference, we have prepared the ER diagram design for the new assesement feature.
+## Technologies Used
 
-![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
+- **Django** – Backend framework for robust web applications.
+- **HTML5 & CSS3** – Structure and styling of web pages.
+- **JavaScript** – Interactive elements and client-side logic.
+- **SQLite** – Default database for development and testing.
+
+## Project Structure
+
+```
+Django-Online-Learning-Platform/
+├── myproject/          # Main project settings and configurations
+├── onlinecourse/       # Core application handling courses and assessments
+├── static/             # Static files (CSS, JavaScript, images)
+├── templates/          # HTML templates
+├── db.sqlite3          # SQLite database
+├── manage.py           # Django management script
+├── requirements.txt    # Project dependencies
+├── runtime.txt         # Python runtime environment
+```
+
+## Getting Started
+
+To set up the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/HSk2703/Django-Online-Learning-Platform.git
+cd Django-Online-Learning-Platform
+```
+
+### 2. Create and Activate a Virtual Environment
+
+```bash
+python -m venv env
+```
+
+#### On Windows:
+```bash
+env\Scripts\activate
+```
+
+#### On macOS/Linux:
+```bash
+source env/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Apply Migrations
+
+```bash
+python manage.py migrate
+```
+
+### 5. Run the Development Server
+
+```bash
+python manage.py runserver
+```
+
+### 6. Access the Application
+
+Open your web browser and navigate to:
+
+👉 [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. **Fork the repository**.
+2. **Create a new branch** for your feature or bug fix.
+3. **Commit your changes** with clear and descriptive messages.
+4. **Push your changes** to your forked repository.
+5. **Submit a pull request** detailing your changes.
+
+## License
+
+This project is licensed under the **Apache-2.0 License**. See the `LICENSE` file for more information.
+
